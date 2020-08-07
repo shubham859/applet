@@ -1,0 +1,46 @@
+---
+title: "Matrix Multiplication"
+author: "Shubham Patil"
+date: "07/08/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Matrix Multiplication Applet
+
+* This is an attempt to simplify the multiplication of two standard 3 by 3 matrices often encountered in preliminary maths.
+* This applet will be pretty useful for non programmers created with the help of shiny package in R.
+
+## Example
+
+Here's an example of the matrix multiplication.
+
+```{r}
+print("Given two 3 by 3 matrices as:")
+A = matrix(rep(1, 9), 3, 3)
+B = matrix(rep(1, 9), 3, 3)
+print("A:")
+print(A)
+print("B:")
+print(B)
+```
+## Result
+
+```{r}
+print("Resultant Matrix A * B:")
+print(A %*% B)
+```
+
+
+
+## Instructions to use applet
+
+* Note that the demo matrices are filled with 1's by default.
+* You can change the inputs as you like.
+* The result is displayed on the main panel under the heading 'A * B'.
+* For more information about creating an applet like this, refer [shiny](shiny.rstudio.com)
+
+## Thank You
